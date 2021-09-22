@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.5fr 3fr 3fr 3fr 3fr 3fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "section1 section1 section1 section1"
+    "section2 section2 section2 section2"
+    "section3 section3 section3 section3"
+    "section4 section4 section4 section4"
+    "section5 section5 section5 section5";
+  grid-gap: 0.2rem;
+}
+
+nav {
+  background: #a7ffeb;
+  grid-area: nav;
+}
+
+.header {
+  background: #84ffff;
+  grid-area: header;
+}
+
+#section1 {
+  background: #18ffff;
+  grid-area: section1;
+}
+
+#section2 {
+  background: #6fffd2;
+  grid-area: section2;
+}
+#section3 {
+  background: #73ffba;
+  grid-area: section3;
+}
+#section4 {
+  background: #64ffda;
+  grid-area: section4;
+}
+#section5 {
+  background: #1de9b6;
+  grid-area: section5;
+}
