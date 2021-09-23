@@ -5,6 +5,7 @@ const menu = document.querySelector(".menu-list");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 const header = document.querySelector(".header");
+const allSections = document.querySelectorAll(".section");
 
 //? Create functions for menubtn class manipulation
 menuBtn.onclick = () => {
@@ -72,3 +73,44 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `${-navHeight}px`,
 });
 headerObserver.observe(header);
+
+// //! Revealing Elements on Scroll
+// //$ As we scroll towards a new section, the section will reveal itself.
+
+// //? Write a function that will display the sections as we scroll towards them
+// //?using IntersectionObserver API.
+// const showSection = function (entries, observer) {
+//   const [entry] = entries;
+//   // console.log(entry);
+
+//   //* Using guard clause so that if nothing is intersecting then the function is
+//   //  * returned right away, and nothing else runs.
+//   if (!entry.isIntersecting) return;
+
+//   //* entry.target is an element in the entry node list. We are removing the
+//   //  *class from there.
+//   entry.target.classList.remove("section--hidden");
+
+//   //* Turning off the observer so that once the element is observed, it does not
+//   //  *continue being observed. This will improve performance.
+//   observer.unobserve(entry.target);
+// };
+
+// const obsOptions = {
+//   //* root can be an element, but if you set it to null, the root will be the *viewport.
+//   root: null,
+//   // threshold is the percentage of intersection at which the obsCallBack
+//   //  *function will be called.
+//   threshold: [0.15],
+// };
+
+// const section1Height = section1.getBoundingClientRect().height;
+// // console.log(section1Height);
+
+// const sectionObserver = new IntersectionObserver(showSection, obsOptions);
+// allSections.forEach(function (section) {
+//   console.log(section);
+//   section.classList.add("section--hidden");
+
+//   sectionObserver.observe(section);
+// });
