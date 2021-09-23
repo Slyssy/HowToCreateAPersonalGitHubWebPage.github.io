@@ -15,8 +15,30 @@
     <title>Create a Personal GitHub Webpage</title>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="content">         
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#section1" class="nav-links">Step 1</a></li>
+          <li><a href="#section2" class="nav-links">Step 2</a></li>
+          <li><a href="#section3" class="nav-links">Step 3</a></li>
+          <li><a href="#section4" class="nav-links">Step 4</a></li>
+          <li><a href="#section5" class="nav-links">Step 5</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="about">
+      <div class="content"></div>
+    </div>
     <div class="container">
-      <nav>Navbar</nav>
+      
       <div class="header">
         <h1>Create a Personal Page on GitHub</h1>
       </div>
@@ -29,7 +51,7 @@
             Password.
           </li>
           <li>Click "Sign Up".</li>
-          <img src="./images/SignUp.png"
+          <img class="signUp" src="./images/SignUp.png" />
         </ol>
       </section>
       <section class="section" id="section2">
@@ -39,7 +61,7 @@
             Click on the green box that says "New" in the repositories section.
             This should take you to a page that looks like this.
           </li>
-          <img src="./images/CreateNewRepository.png" />
+          <img class="newRepository" src="./images/CreateNewRepository.png" />
           <li>Enter a repository name.</li>
           <li>
             When naming your repository, use the following syntax.
@@ -54,7 +76,7 @@
               to a page like this.</em
             >
           </p>
-          <img src="./images/RepositoryScreen.png" />
+          <img class="repositoryScreen" src="./images/RepositoryScreen.png" />
         </ol>
       </section>
       <section class="section" id="section3">
@@ -173,5 +195,6 @@
         </ol>
       </section>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
