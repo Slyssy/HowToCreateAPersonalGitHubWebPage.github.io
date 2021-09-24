@@ -1,25 +1,25 @@
 //? Create Variables to access and store DOM Elements
 const body = document.querySelector("body");
-const navbar = document.querySelector(".navbar");
+const nav = document.querySelector(".nav");
 const menu = document.querySelector(".menu-list");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 const header = document.querySelector(".header");
 const allSections = document.querySelectorAll(".section");
 
-//? Create functions for menubtn class manipulation
-menuBtn.onclick = () => {
-  menu.classList.add("active");
-  menuBtn.classList.add("hide");
-  body.classList.add("disabledScroll");
-};
+// //? Create functions for menubtn class manipulation
+// menuBtn.onclick = () => {
+//   menu.classList.add("active");
+//   menuBtn.classList.add("hide");
+//   body.classList.add("disabledScroll");
+// };
 
-//? Create functions for concelBtn class manipulation
-cancelBtn.onclick = () => {
-  menu.classList.remove("active");
-  menuBtn.classList.remove("hide");
-  body.classList.remove("disabledScroll");
-};
+// //? Create functions for concelBtn class manipulation
+// cancelBtn.onclick = () => {
+//   menu.classList.remove("active");
+//   menuBtn.classList.remove("hide");
+//   body.classList.remove("disabledScroll");
+// };
 
 // //? Create function to control when scroll event adds and removes the sticky class.
 // window.onscroll = () => {
@@ -44,6 +44,33 @@ document
     }
   });
 
+//! Menu Fade Animation...
+
+//? Selecting the nav link because it is the parent link to all the elements in
+//?the nav bar.
+const handleHover = function (event) {
+  if (event.target.classList.contains("nav__link")) {
+    //? Define the elements we will be working with.
+    const link = event.target;
+    const siblings = link.closest(".nav").querySelectorAll(".nav__link");
+    const logo = link.closest(".nav").querySelector("img");
+
+    //? Loop through the nav__link elements and if they don't equal the one that
+    //? is being hovered over, then their opacity is set to 0.5.
+    siblings.forEach((el) => {
+      if (el !== link) {
+        el.style.opacity = this;
+      }
+    });
+    //? Setting the logo's opacity to 0.5 when a nav link is hovered over.
+    logo.style.opacity = this;
+  }
+};
+
+nav.addEventListener("mouseover", handleHover.bind(0.5));
+
+nav.addEventListener("mouseout", handleHover.bind(1));
+
 //! Implementing Sticky Navigation Using "The Intersection Observer API"
 //$ The Intersection Observer API allows code to observe changes to the way a
 //$certain target element intersects another element or the way it intersects
@@ -57,12 +84,12 @@ const stickyNav = function (entries) {
   const [entry] = entries;
   // console.log(entry);
   if (entry.isIntersecting === false) {
-    navbar.classList.add("sticky");
+    nav.classList.add("sticky");
   } else {
-    navbar.classList.remove("sticky");
+    nav.classList.remove("sticky");
   }
 };
-const navHeight = navbar.getBoundingClientRect().height;
+const navHeight = nav.getBoundingClientRect().height;
 // console.log(navHeight);
 const headerObserver = new IntersectionObserver(stickyNav, {
   //* root can be an element, but if you set it to null, the root will be the *viewport.
