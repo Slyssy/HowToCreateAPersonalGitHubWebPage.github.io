@@ -35,8 +35,8 @@ img {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(19, 19, 19);
-  height: 9rem;
-  width: 90%;
+  height: 6rem;
+  width: 95%;
   padding: 0 6rem;
   margin-right: 5rem;
   z-index: 100;
@@ -52,7 +52,7 @@ img {
 .nav__logo {
   display: block;
   max-height: auto;
-  max-width: 100%;
+  max-width: 75%;
   margin: 0px 0px;
 }
 
@@ -98,27 +98,27 @@ img {
 #section1 {
   grid-column-start: 2;
   grid-column-end: 12;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 120px;
 }
 
 #section2 {
   grid-column-start: 2;
   grid-column-end: 12;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 120px;
 }
 
 #section3 {
   grid-column-start: 2;
   grid-column-end: 12;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 120px;
 }
 #section4 {
   grid-column-start: 2;
   grid-column-end: 12;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 120px;
 }
 #section5 {
   grid-column-start: 2;
   grid-column-end: 12;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 120px;
 }

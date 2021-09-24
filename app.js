@@ -95,8 +95,8 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   //* root can be an element, but if you set it to null, the root will be the *viewport.
   root: null,
   //* threshold is the percentage of intersection at which the obsCallBack
-  threshold: 0,
-  //? Set margin so the threshold is breached 90 pixels before the target.
+  threshold: 1,
+  //? Set margin so the threshold is breached before the target.
   rootMargin: `${-navHeight}px`,
 });
 headerObserver.observe(header);
