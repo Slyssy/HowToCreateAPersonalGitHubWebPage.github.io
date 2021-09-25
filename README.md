@@ -9,7 +9,7 @@
 - JavaScript
   <br><br>
 
-#### \*\*Note: There are many ways to create and deploy a personal page on GitHub. This is how I do it.<br><br>
+#### <span style="color:red">\*\*Note: There are many ways to create and deploy a personal page on GitHub. This is how I do it.</span><br><br>
 
 ![Section 1](./images/Section1.png)
 ![Section 2a](./images/Section2a.png)
