@@ -1,5 +1,7 @@
 # Create a Personal Page on GitHub
 
+### In this repository I explain how a new programmer can create a repository on GitHub. By following these instructions a new programmer will be able to not only create a new repository, but I also walk them through the process of deploying the repository via the GitHub-Pages environment.
+
 ## Languages Used.
 
 - HTML
@@ -7,8 +9,7 @@
 - JavaScript
   <br><br>
 
-\*\*Note: There are many ways to create and deploy a personal page on GitHub.
-This is how I do it.
+#### \*\*Note: There are many ways to create and deploy a personal page on GitHub. This is how I do it.<br><br>
 
 ![Section 1](./images/Section1.png)
 ![Section 2a](./images/Section2a.png)
