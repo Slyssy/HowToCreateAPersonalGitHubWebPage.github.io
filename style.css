@@ -298,6 +298,20 @@ body {
   align-items: center;
 }
 
+#gitList1 {
+  display: list-item;
+  list-style-position: inside;
+  font-weight: bold;
+
+  width: 53rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
 .slide__list li {
   flex-basis: 100%;
 }
@@ -355,6 +369,22 @@ figcaption {
 .gitImage {
   grid-row: 1 / span 2;
   width: 60rem;
+
+  display: flex;
+  margin: auto;
+}
+
+.gitImage1 {
+  grid-row: 1 / span 2;
+  width: 45rem;
+
+  display: flex;
+  margin: auto;
+}
+
+.gitHubRepository2 {
+  grid-row: 1 / span 2;
+  width: 45rem;
 
   display: flex;
   margin: auto;
