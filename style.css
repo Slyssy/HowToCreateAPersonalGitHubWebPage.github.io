@@ -181,7 +181,7 @@ body {
   z-index: 10;
 
   border: none;
-  background: rgba(255, 255, 255, 0.7);
+  background: transparent;
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -189,15 +189,21 @@ body {
   width: 5.5rem;
   font-size: 3.25rem;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.slider__btn:hover {
+  background: rgba(48, 47, 47);
+  color: goldenrod;
 }
 
 .slider__btn--left {
-  left: 6%;
+  left: 4%;
   transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
-  right: 6%;
+  right: 4%;
   transform: translate(50%, -50%);
 }
 
@@ -230,7 +236,7 @@ body {
 
 .dots__dot--active {
   /* background-color: #fff; */
-  background-color: var(--color-primary);
+  background-color: goldenrod;
   opacity: 1;
 }
 
