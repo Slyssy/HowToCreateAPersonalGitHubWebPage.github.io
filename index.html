@@ -14,7 +14,7 @@
 
     <title>Create a Personal GitHub Webpage</title>
   </head>
-  <body>
+  <>
     <!--! Start Navigation Bar Section -->
     <nav class="nav">
       <a href="https://github.com/Slyssy">
@@ -28,19 +28,28 @@
 
       <ul class="nav__links">
         <li class="nav__item">
-          <a class="nav__link" href="#section1">Step 1</a>
+          <a class="nav__link" data-slide="0">Step 1</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#section2">Step 2</a>
+          <a class="nav__link" data-slide="1">Step 2</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#section3">Step 3</a>
+          <a class="nav__link" data-slide="2">Step 3</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#section4">Step 4</a>
+          <a class="nav__link" data-slide="3">Step 4</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#section5">Step 5</a>
+          <a class="nav__link" data-slide="4">Step 5</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" data-slide="5">Step 6</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" data-slide="6">Step 7</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" data-slide="7">Step 8</a>
         </li>
       </ul>
     </nav>
@@ -53,8 +62,8 @@
       <div class="header">
         <h1>Create a Personal Page on GitHub</h1>
       </div>
-      <!--! Start Section 1 -->
-      <section class="section" id="section1">
+      <!-- Start Section 1 -->
+      <!-- <section class="section" id="section1">
         <h3>Step1: Create a GitHub Account</h3>
         <ol class="center">
           <li>Log onto GitHub by going to www.github.com</li>
@@ -66,8 +75,35 @@
           <img class="signUp" src="./images/SignUp.png" />
         </ol>
       </section>
-      <!--! Start Section 2 -->
-      <section class="section" id="section2">
+ -->
+      <!--  Start Slide 1 -->
+      <!-- <div class="slider">
+        <div class="slide slide--1">
+          <div class = "slide__content">
+          
+            <h3 class="slide__header">Step1: Create a GitHub Account</h3>
+            <ol class="slide__list">
+              <li>Log onto GitHub by going to www.github.com</li>
+              <li>
+                Fill in the Username, Email and Password.
+              </li>
+              <li>Click "Sign Up".</li>
+              <img class="slide__img" id="signUp" src="./images/SignUp.png" />
+            </ol>
+        </div>
+        </div> -->
+      <!-- ! Start Slide 1 Keynote -->
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class = "slide__content">            
+            <img class="slide__img" src="./images/Slide1.png" /> 
+        </div>
+        </div>
+       
+        
+        
+      <!-- Start Section 2 -->
+      <!-- <section class="section" id="section2">
         <h3>Step2: Create a New Repository</h3>
         <ol class="center">
           <li>
@@ -91,9 +127,50 @@
           </p>
           <img class="repositoryScreen" src="./images/RepositoryScreen.png" />
         </ol>
-      </section>
-      <!--! Start Section 3 -->
-      <section class="section" id="section3">
+      </section> -->
+
+      <!-- ! Start Slide 2 Keynote-->
+      <div class="slide slide--2">
+          <div class = "slide__content">          
+            <img class="slide__img" src="./images/slide2.png" />
+        </div>
+      </div>       
+
+      <!--  Start Slide 3 -->
+      <!-- <div class="slide slide--3">
+            <div class = "slide__content">
+              <h3 class="slide__header">Step 3: Name Your Repository</h3>
+              <ol class="slide__list">
+                <li>Enter a repository name.</li>
+                <li>
+                  When naming your repository, use the following syntax.
+                  [yourusername].github.io
+                </li>
+                <li>
+                  You should always include a ReadMe file that explains the
+                  contents of your repository.
+                </li>
+                <li>
+                  It's also a good idea to create a .getignore file by selecting
+                  the check box.
+                </li>
+                <li>
+                  Click [Create Repository], and you should get a screen like this.
+                </li>
+                </ol>
+           
+              <img class="slide__img" id="repositoryScreen" src="./images/RepositoryScreen.png" />        
+            </div>
+            </div> -->
+
+      <!-- ! Start Slide 3 Keynote -->
+      <div class="slide slide--3">
+        <div class = "slide__content">                
+          <img class="slide__img" src="./images/slide3.png" />        
+        </div>
+      </div>
+      <!-- Start Section 3 -->
+      <!-- <section class="section" id="section3">
         <h3>Step3: Clone Your New Repository to Your Local Machine</h3>
         <ol class="center">
           <li>
@@ -113,9 +190,41 @@
           </li>
           <img src="./images/TerminalGitClone.png" />
         </ol>
-      </section>
-      <!--! Start Section 4 -->
-      <section class="section" id="section4">
+      </section> -->
+
+      <!--  Start Slide 4 -->
+      <!-- <div class="slide slide--4">
+        <div class = "slide__content">
+          <h3 class="slide__header">Step 4: Create Files and Open VSCode</h3>
+          <ol class="slide__list">
+            <li>
+              Back in your terminal create a new index.html file by typing
+              <b>touch index.html</b>. (Note: Make sure you are in the correct
+              file in your terminal)
+              <img src="./images/TouchIndexHTML.png" />
+            </li>
+            <li>
+              Now open the folder you just cloned in VS Code. Your VS Code screen
+              should look something like this.
+            </li>
+            <figure>
+              <img class="slide__img" src="./images/OpenVSCode.png" />
+              <figcaption>**Note: You can create the HTML template by typing
+                <STRONG>! then hitting [enter]</STRONG>
+                on the first line of you index.html file.</figcaption>
+            </figure>            
+            </ol>               
+        </div>
+        </div> -->
+
+      <!-- ! Start Slide 4 Keynote -->
+      <div class="slide slide--4">
+        <div class = "slide__content">
+              <img class="slide__img" src="./images/slide4.png"/>
+        </div>
+      </div>
+      <!-- Start Section 4 -->
+      <!-- <section class="section" id="section4">
         <h3>Step 4: Create Files and Open VSCode</h3>
         <ol class="center">
           <li>
@@ -136,17 +245,50 @@
           </li>
           <li>Build an awesome personal web page.</li>
         </ol>
-      </section>
-      <!--! Start Section 5 -->
-      <section class="section" id="section5">
+      </section> -->
+
+      <!--  Start Slide 5 -->
+      <!-- <div class="slide slide--5">
+        <div class = "slide__content">
+          <h3 class="slide__header">Step 5: Upload Changes to GitHub</h3>
+          <ol class="slide__list" id="gitList1">
+            <li>You'll need to open your terminal. VS Code makes this easy.
+            While in VSCode simply hold down <em><>[control] + `</></em>
+            </li>
+            <li>
+              Now that your terminal is open, type <em>git status</em> in
+              your terminal. Your terminal should look something like this.
+            </li>
+            <figure>
+              <img class="gitImage1" src="./images/GitStatus.png" />
+              <figcaption>Note: This will tell you what files have been changed or added on
+                your local machine that are different from what are in the GitHub
+                repository. The updated files will appear in RED.</figcaption>
+            </figure>
+            <li>
+              Now type <b><em>git add .</em></b>
+            </li>
+  
+            <li>
+              This adds the files to the queue to be committed. To confirm the
+              files were added to the queue, type <b><em>git status</em></b
+              >. Your terminal should look like this.
+            </li>
+            <figure>
+              <img class="gitImage1" src="./images/GitAdd.png" />
+              <figcaption>Note: the file names are now green.</figcaption>
+            </figure>            
+            </ol>               
+        </div>
+        </div> -->
+      <!-- Start Section 5 -->
+      <!-- <section class="section" id="section5">
         <h3>Step 5: Upload Changes to GitHub and Deploy Your Personal Page</h3>
         Now that your files are created, you need to push the changes to your
         GitHub Repository. This can be done by first opening the terminal in
         VSCode.<br /><br />
         <em
-          >VSCode makes it really easy to access the terminal. While in VSCode
-          simply hold down <b>[control] + `</b></em
-        >
+          >VSCode makes it really easy to access the terminal. 
         <ol class="center">
           <li>
             Now that your terminal is open, type <b><em>git status</em></b> in
@@ -208,8 +350,95 @@
             You are DONE! Go to your browswer and type in the name you created
             back in step 2 to access your deployed GitHub personal page.
           </li>
-        </ol>
-      </section>
+        </ol> 
+      </section>-->
+      <!-- !Start Slide 5 Keynote -->
+      <div class="slide slide--5">
+        <div class = "slide__content">
+          <img class="slide__img" src="./images/slide5.png"/>         
+        </div>
+      </div>
+      <!--  Start Slide 6 -->
+      <!-- <div class="slide slide--6">
+        <div class = "slide__content">
+          <h3 class="slide__header">Step 6: Commit & Push Changes to GitHub</h3>
+          <ol class="slide__list" id="gitList">
+            <li>
+              Next, you need to commit the files. This is done by typing
+              <b><em>git commit -m"Initial Commit". </em></b>  Your screen should look like this.
+            </li>
+            
+            <figure id="textTop">
+              <img class="gitImage" src="./images/GitCommit.png" />
+              <figcaption id="captionTop">
+                Note: All commits must include a message to explain what is being
+                committed. That is what -m" " flag indicates. You can type what
+                ever you want between the quotation marks.
+              </figcaption>
+            </figure>
+            
+            <li>
+              Finally, we need to push the changes to the GitHub repository. This
+              is done by typing <b><em>git push</em></b
+              >.
+            </li>
+            <p>Your terminal should now look something like this...</p>
+            <img class="gitImage" src="./images/GitPush.png" />                 
+            </ol>               
+        </div>
+        </div> -->
+      <!-- ! Start Slide 6 Keynote -->
+      <div class="slide slide--6">
+        <div class = "slide__content">
+          <img class="slide__img" src="./images/slide6.png"/>         
+        </div>
+      </div>
+      <!--  Start Slide 7 -->
+      <!-- <div class="slide slide--7">
+          <div class = "slide__content">
+            <h3 class="slide__header">Step 7: Commit & Push Changes to GitHub</h3>
+            <ol class="git__list" id="gitList">
+              <li>
+                Check your GitHub repository to verify the changes were uploaded.
+                Your repository should look something like this...
+              </li>
+              <figure>
+                <img class="gitImage" src="images/gitHubRepository2.png" />
+                <figcaption>Note: Make sure the green "Active" notification is
+                displayed in the Environments section.</figcaption>
+              </figure>
+              
+              <p>
+                <em
+                  ></em
+                >
+              </p>
+              <li>
+                You are DONE! Go to your browser and type in the name you created
+                back in step 2 to access your deployed GitHub personal page.
+              </li>         
+              </ol>               
+          </div>
+          </div> -->
+      <!--! Start Slide 7 Keynote -->
+      <div class="slide slide--7">
+        <div class = "slide__content">
+          <img class="slide__img" src="./images/slide7.png"/>         
+        </div>
+      </div>
+
+      <!-- ! Start Slide 8 Keynote -->
+      <div class="slide slide--8">
+        <div class = "slide__content">
+          <img class="slide__img" src="./images/slide8.png"/>         
+        </div>
+      </div>
+
+      <!-- ! Start Slide Buttons -->
+        <button class="slider__btn slider__btn--left">&#8701;</button>
+        <button class="slider__btn slider__btn--right">&#8702;</button>
+        <div class="dots"></div>
+
     </div>
     <script src="./app.js"></script>
   </body>
