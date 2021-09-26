@@ -46,6 +46,7 @@ body {
 /* ! Navbar Styling */
 
 .nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +55,7 @@ body {
   width: 95%;
   padding: 0 6rem;
   margin-right: 5rem;
-  z-index: 100;
+  /* z-index: -1; */
 }
 
 /** nav and sticky class at the same time */
@@ -87,13 +88,15 @@ body {
 
 .nav__item {
   margin-left: 4rem;
+  cursor: pointer;
+  color: white;
 }
 
 .nav__link:link,
 .nav__link:visited {
   font-size: 1.2rem;
   font-weight: 400;
-  color: whitesmoke;
+  color: white;
   text-decoration: none;
   display: block;
   transition: all 0.3s;
@@ -158,7 +161,7 @@ body {
   top: 0;
   right: 0rem;
   width: 100%;
-  height: 70rem;
+  height: 90rem;
 
   display: flex;
   align-items: center;
@@ -166,13 +169,15 @@ body {
 
   /* THIS creates the animation! */
   transition: transform 1s;
+  z-index: -1;
 }
 
-.slide > img {
-  /* Only for images that have different size than slide */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.slide__img {
+  grid-row: 1 / span 2;
+  width: 90rem;
+
+  display: flex;
+  margin: auto;
 }
 
 .slider__btn {
@@ -194,7 +199,7 @@ body {
 
 .slider__btn:hover {
   background: rgba(48, 47, 47);
-  color: goldenrod;
+  color: darkred;
 }
 
 .slider__btn--left {
@@ -209,10 +214,12 @@ body {
 
 .dots {
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  /* transform: translateY(-100%); */
   display: flex;
+  align-self: flex-end;
 }
 
 .dots__dot {
@@ -236,7 +243,7 @@ body {
 
 .dots__dot--active {
   /* background-color: #fff; */
-  background-color: goldenrod;
+  background-color: darkred;
   opacity: 1;
 }
 
@@ -249,10 +256,10 @@ body {
   font-size: 20rem;
   font-family: inherit;
   color: var(--color-primary);
-  z-index: -1;
+  z-index: 1;
 }
 
-.slide__header {
+/* .slide__header {
   font-size: 2.25rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
@@ -260,9 +267,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.slide__list {
+/* .slide__list {
   display: list-item;
   list-style-position: inside;
   font-weight: bold;
@@ -274,9 +281,9 @@ body {
   margin: auto;
   justify-content: center;
   align-items: center;
-}
+} */
 
-#newRepositoryList {
+/* #newRepositoryList {
   display: list-item;
   list-style-position: inside;
   font-weight: bold;
@@ -288,9 +295,9 @@ body {
   margin: auto;
   justify-content: center;
   align-items: center;
-}
+} */
 
-#gitList {
+/* #gitList {
   display: list-item;
   list-style-position: inside;
   font-weight: bold;
@@ -302,9 +309,9 @@ body {
   margin: auto;
   justify-content: center;
   align-items: center;
-}
+} */
 
-#gitList1 {
+/* #gitList1 {
   display: list-item;
   list-style-position: inside;
   font-weight: bold;
@@ -316,29 +323,29 @@ body {
   margin: auto;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.slide__list li {
+/* .slide__list li {
   flex-basis: 100%;
-}
+} */
 
-figure {
+/* figure {
   margin: auto;
-}
+} */
 
-figcaption {
+/* figcaption {
   text-align: center;
   font-style: italic;
   color: red;
-}
+} */
 
-#textTop {
+/* #textTop {
   display: table;
-}
-#captionTop {
+} */
+/* #captionTop {
   display: table-caption;
   caption-side: top;
-}
+} */
 /* .caption-top {
   height: 1.2em;
   width: 100%;
@@ -348,29 +355,29 @@ figcaption {
   z-index: 1;
 } */
 
-#signUp {
+/* #signUp {
+  grid-row: 1 / span 2;
+  width: 90rem;
+
+  display: flex;
+  margin: auto;
+} */
+
+/* #createNewRepository {
+  grid-row: 1 / span 2;
+  width: 90rem;
+
+  display: flex;
+  margin: auto;
+} */
+
+/* #repositoryScreen {
   grid-row: 1 / span 2;
   width: 45rem;
 
   display: flex;
   margin: auto;
-}
-
-#createNewRepository {
-  grid-row: 1 / span 2;
-  width: 35rem;
-
-  display: flex;
-  margin: auto;
-}
-
-#repositoryScreen {
-  grid-row: 1 / span 2;
-  width: 45rem;
-
-  display: flex;
-  margin: auto;
-}
+} */
 
 .gitImage {
   grid-row: 1 / span 2;

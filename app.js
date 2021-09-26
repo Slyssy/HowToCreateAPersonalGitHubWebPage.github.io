@@ -1,24 +1,19 @@
 // //? Create Variables to access and store DOM Elements
 // const body = document.querySelector("body");
-// const nav = document.querySelector(".nav");
+const nav = document.querySelector(".nav");
 // const menu = document.querySelector(".menu-list");
 // const menuBtn = document.querySelector(".menu-btn");
 // const cancelBtn = document.querySelector(".cancel-btn");
 // const header = document.querySelector(".header");
 // const allSections = document.querySelectorAll(".section");
 
-// // //? Create functions for menubtn class manipulation
-// // menuBtn.onclick = () => {
-// //   menu.classList.add("active");
-// //   menuBtn.classList.add("hide");
-// //   body.classList.add("disabledScroll");
-// // };
-
 const slides = document.querySelectorAll(".slide");
 const slider = document.querySelector(".slider");
 const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
 const dotContainer = document.querySelector(".dots");
+const navLinks = document.querySelector(".nav__links");
+console.log(navLinks);
 
 // // //? Create functions for concelBtn class manipulation
 // // cancelBtn.onclick = () => {
@@ -50,32 +45,32 @@ const dotContainer = document.querySelector(".dots");
 //     }
 //   });
 
-// //! Menu Fade Animation...
+//! Menu Fade Animation...
 
-// //? Selecting the nav link because it is the parent link to all the elements in
-// //?the nav bar.
-// const handleHover = function (event) {
-//   if (event.target.classList.contains("nav__link")) {
-//     //? Define the elements we will be working with.
-//     const link = event.target;
-//     const siblings = link.closest(".nav").querySelectorAll(".nav__link");
-//     const logo = link.closest(".nav").querySelector("img");
+//? Selecting the nav link because it is the parent link to all the elements in
+//?the nav bar.
+const handleHover = function (event) {
+  if (event.target.classList.contains("nav__link")) {
+    //? Define the elements we will be working with.
+    const link = event.target;
+    const siblings = link.closest(".nav").querySelectorAll(".nav__link");
+    const logo = link.closest(".nav").querySelector("img");
 
-//     //? Loop through the nav__link elements and if they don't equal the one that
-//     //? is being hovered over, then their opacity is set to 0.5.
-//     siblings.forEach((el) => {
-//       if (el !== link) {
-//         el.style.opacity = this;
-//       }
-//     });
-//     //? Setting the logo's opacity to 0.5 when a nav link is hovered over.
-//     logo.style.opacity = this;
-//   }
-// };
+    //? Loop through the nav__link elements and if they don't equal the one that
+    //? is being hovered over, then their opacity is set to 0.5.
+    siblings.forEach((el) => {
+      if (el !== link) {
+        el.style.opacity = this;
+      }
+    });
+    //? Setting the logo's opacity to 0.5 when a nav link is hovered over.
+    logo.style.opacity = this;
+  }
+};
 
-// nav.addEventListener("mouseover", handleHover.bind(0.5));
+nav.addEventListener("mouseover", handleHover.bind(0.5));
 
-// nav.addEventListener("mouseout", handleHover.bind(1));
+nav.addEventListener("mouseout", handleHover.bind(1));
 
 // //! Implementing Sticky Navigation Using "The Intersection Observer API"
 // //$ The Intersection Observer API allows code to observe changes to the way a
@@ -204,12 +199,25 @@ const sliderFunction = function () {
   //* dotContainer is the parent element for all of the dots.
   dotContainer.addEventListener("click", function (e) {
     if (e.target.classList.contains("dots__dot")) {
-      // console.log(e.target);
+      console.log(e.target);
       const { slide } = e.target.dataset;
-      // console.log(slide);
+      console.log(slide);
+      goToSlide(slide);
+      activateDot(slide);
+    }
+  });
+
+  //? Add event listener to the navLinks using event delegation
+  navLinks.addEventListener("click", function (e) {
+    if (e.target.classList.contains("nav__link")) {
+      console.log(e.target);
+      const { slide } = e.target.dataset;
+      console.log(slide);
       goToSlide(slide);
       activateDot(slide);
     }
   });
 };
+
+console.log(dotContainer);
 sliderFunction();
