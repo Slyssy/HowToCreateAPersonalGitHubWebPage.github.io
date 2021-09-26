@@ -154,10 +154,11 @@ body {
 }
 
 .slide {
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0rem;
   width: 100%;
-  height: 50rem;
+  height: 70rem;
 
   display: flex;
   align-items: center;
@@ -234,7 +235,7 @@ body {
 }
 
 .slide__content::before {
-  content: "\201C";
+  /* content: \201c; */
   position: relative;
   top: -5.7rem;
   left: -6.8rem;
@@ -260,11 +261,41 @@ body {
   list-style-position: inside;
   font-weight: bold;
 
-  width: 70rem;
+  width: 45rem;
 
   display: flex;
   flex-flow: row wrap;
   margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#newRepositoryList {
+  display: list-item;
+  list-style-position: inside;
+  font-weight: bold;
+
+  width: 35rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#gitList {
+  display: list-item;
+  list-style-position: inside;
+  font-weight: bold;
+
+  width: 60rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide__list li {
@@ -275,6 +306,19 @@ figure {
   margin: auto;
 }
 
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: red;
+}
+
+#textTop {
+  display: table;
+}
+#captionTop {
+  display: table-caption;
+  caption-side: top;
+}
 /* .caption-top {
   height: 1.2em;
   width: 100%;
@@ -286,7 +330,7 @@ figure {
 
 #signUp {
   grid-row: 1 / span 2;
-  width: 35rem;
+  width: 45rem;
 
   display: flex;
   margin: auto;
@@ -295,6 +339,22 @@ figure {
 #createNewRepository {
   grid-row: 1 / span 2;
   width: 35rem;
+
+  display: flex;
+  margin: auto;
+}
+
+#repositoryScreen {
+  grid-row: 1 / span 2;
+  width: 45rem;
+
+  display: flex;
+  margin: auto;
+}
+
+.gitImage {
+  grid-row: 1 / span 2;
+  width: 60rem;
 
   display: flex;
   margin: auto;
