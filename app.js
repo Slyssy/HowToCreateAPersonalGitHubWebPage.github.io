@@ -6,7 +6,7 @@ const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
 const dotContainer = document.querySelector(".dots");
 const navLinks = document.querySelector(".nav__links");
-console.log(navLinks);
+// console.log(navLinks);
 
 //! Menu Fade Animation...
 
@@ -152,5 +152,5 @@ const sliderFunction = function () {
   });
 };
 
-console.log(dotContainer);
+// console.log(dotContainer);
 sliderFunction();
