@@ -9,14 +9,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  color: #444;
-  line-height: 1.9;
-  background-color: #f1f1f1;
-}
-
 /* !Body Styling */
 body {
   font-family: "Poppins", sans-serif;
@@ -40,26 +32,12 @@ body {
   margin-right: 5rem;
 }
 
-/** nav and sticky class at the same time */
-.nav.sticky {
-  position: fixed;
-  background-color: rgb(19, 19, 19);
-  opacity: 60%;
-}
-
 .nav__logo {
   display: block;
   max-height: auto;
   max-width: 75%;
-  margin: 0px 0px;
-}
-
-.nav__logo {
   cursor: pointer;
-}
-
-.nav__logo {
-  margin-left: -40px;
+  margin-left: -30px;
 }
 
 .nav__links {
@@ -97,6 +75,17 @@ body {
   margin-bottom: 00px;
 }
 
+.instructions {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  color: darkred;
+}
+
 /* ! Slider Styling */
 .slider {
   max-width: 100rem;
@@ -120,8 +109,8 @@ body {
   align-items: center;
   justify-content: center;
 
-  /* THIS creates the animation! */
-  transition: transform 1s;
+  /** THIS creates the animation!  */
+  transition: transform 0.8s;
   z-index: -1;
 }
 
@@ -151,8 +140,8 @@ body {
 }
 
 .slider__btn:hover {
-  background: rgba(48, 47, 47);
-  color: darkred;
+  background: darkred;
+  opacity: 0.8;
 }
 
 .slider__btn--left {
@@ -170,7 +159,6 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  /* transform: translateY(-100%); */
   display: flex;
   align-self: flex-end;
 }
@@ -194,18 +182,6 @@ body {
 .dots__dot--active {
   background-color: darkred;
   opacity: 1;
-}
-
-.slide__content::before {
-  /* content: \201c; */
-  position: relative;
-  top: -5.7rem;
-  left: -6.8rem;
-  line-height: 1;
-  font-size: 20rem;
-  font-family: inherit;
-  color: var(--color-primary);
-  z-index: 1;
 }
 
 .gitImage {
