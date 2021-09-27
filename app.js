@@ -132,9 +132,9 @@ const sliderFunction = function () {
   //* dotContainer is the parent element for all of the dots.
   dotContainer.addEventListener("click", function (e) {
     if (e.target.classList.contains("dots__dot")) {
-      console.log(e.target);
+      // console.log(e.target);
       const { slide } = e.target.dataset;
-      console.log(slide);
+      // console.log(slide);
       goToSlide(slide);
       activateDot(slide);
     }
@@ -143,9 +143,9 @@ const sliderFunction = function () {
   //? Add event listener to the navLinks using event delegation
   navLinks.addEventListener("click", function (e) {
     if (e.target.classList.contains("nav__link")) {
-      console.log(e.target);
+      // console.log(e.target);
       const { slide } = e.target.dataset;
-      console.log(slide);
+      // console.log(slide);
       goToSlide(slide);
       activateDot(slide);
     }

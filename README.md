@@ -11,10 +11,11 @@
 
 #### <span style="color:red">\*\*Note: There are many ways to create and deploy a personal page on GitHub. This is how I do it.</span><br><br>
 
-![Section 1](./images/Section1.png)
-![Section 2a](./images/Section2a.png)
-![Section 2b](./images/Section2b.png)
-![Section 3](./images/Section3.png)
-![Section 4](./images/Section4.png)
-![Section 5a](./images/Section5a.png)
-![Section 5b](./images/Section5b.png)
+![Slide 1](./images/Slide1.png)
+![Slide 2](./images/Slide2.png)
+![Slide 3](./images/Slide3.png)
+![Slide 4](./images/Slide4.png)
+![Slide 5](./images/Slide5.png)
+![Slide 6](./images/Slide6.png)
+![Slide 7](./images/Slide7.png)
+![Slide 8](./images/Slide8.png)
